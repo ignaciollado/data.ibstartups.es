@@ -1,0 +1,42 @@
+[
+  {
+    "enterpriseId": 1,
+    "tagES": "#noticies",
+    "tagCA": "#noticies",
+    "projectNameES": "Cultaru",
+    "projectNameCA": "Cultaru",
+    "projectImg": "../assets/images/c13st0erg7ffre6xd9am.jpg",
+    "projectFase": "Adriana Ruiz García",
+    "projectLema": "adriana@cultaru.com",
+    "projectLemaCA": "adriana@cultaru.com",
+    "projectDestination": "cultaru.com",
+    "projectDestination_ca": "cultaru.com"
+
+  },
+  {
+    "enterpriseId": 2,
+    "tagES": "#ayudas",
+    "tagCA": "#ajuts",
+    "projectNameES": "Phoenix 3D",
+    "projectNameCA": "Phoenix 3D",
+    "projectImg": "../assets/images/adrbalears-ayudas-subvenciones.webp",
+    "projectFase": "Juan Carrasco",
+    "projectLema": "administracion@phoenix3dp.com",
+    "projectLemaCA": "administracion@phoenix3dp.com",
+    "projectDestination": "www.phoenix3dp.com",
+    "projectDestination_ca": "www.phoenix3dp.com"
+  },
+  {
+    "enterpriseId": 3,
+    "tagES": "#guias",
+    "tagCA": "#guies",
+    "projectNameES": "Dron Il·lusions SL",
+    "projectNameCA": "Dron Il·lusions SL",
+    "projectImg": "../assets/images/publicaciones-ok-adrbalears.webp",
+    "projectFase": "Joan Luis Tomás",
+    "projectLema": "jluis@alsant.net",
+    "projectLemaCA": "jluis@alsant.net",
+    "projectDestination": "www.alsant.net",
+    "projectDestination_ca": "www.alsant.net"
+  }
+]
