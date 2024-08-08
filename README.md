@@ -1,4 +1,4 @@
-# DataIbstartupsEs
+# data.ibstartups.es
 
 Genera un listado de empresas que se mostrará en un iframe en el portal `https://ibstartups.es`
 
@@ -27,3 +27,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Styling
+
+Styling SCSS method is used.
+
+## Bootstrap
+
+Bootstrap was added using: npm install bootstrap.
+
+npm i @ng-bootstrap/ng-bootstrap --force
