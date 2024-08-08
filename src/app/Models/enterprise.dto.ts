@@ -1,38 +1,36 @@
 export class EnterpriseDTO {
-  slideId: number
-  tagES: string
-  tagCA: string
-  projectNameES: string
-  projectNameCA: string
-  projectImg: string
-  projectFase: string
-  projectLema: string
-  projectLemaCA: string
-  projectDestination: string
-  projectDestination_ca: string
+  enterpriseId: number
+  constitucionJuridica: string
+  socialDenomination: string
+  activity: string
+  logo: string
+  nameSurname: string
+  contactEmail: string
+  dateCreation: string
+  enterpriseSite: string
+  island: string
+
  constructor(
-  slideId: number,
-  tagES: string,
-  tagCA: string,
-  projectNameES: string,
-  projectNameCA: string,
-  projectImg: string,
-  projectFase: string,
-  projectLema: string,
-  projectLemaCA: string,
-  projectDestination: string,
-  projectDestination_ca: string,
+  enterpriseId: number,
+  constitucionJuridica: string,
+  socialDenomination: string,
+  activity: string,
+  logo: string,
+  nameSurname: string,
+  contactEmail: string,
+  dateCreation: string,
+  enterpriseSite: string,
+  island: string,
   ) {
-    this.slideId = slideId
-    this.tagES = tagES
-    this.tagCA = tagCA
-    this.projectNameES = projectNameES
-    this.projectNameCA = projectNameCA
-    this.projectImg = projectImg
-    this.projectFase = projectFase
-    this.projectLema = projectLema
-    this.projectLemaCA = projectLemaCA
-    this.projectDestination = projectDestination
-    this.projectDestination_ca = projectDestination_ca
+    this.enterpriseId = enterpriseId
+    this.constitucionJuridica = constitucionJuridica
+    this.socialDenomination = socialDenomination
+    this.activity = activity
+    this.logo = logo
+    this.nameSurname = nameSurname
+    this.contactEmail = contactEmail
+    this.dateCreation = dateCreation
+    this.enterpriseSite = enterpriseSite
+    this.island = island
     }
 }

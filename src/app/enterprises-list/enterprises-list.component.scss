@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+
+  color: #42b6e9;
+}
+
+a:hover {
+  opacity: 1;
+  transition: opacity 100ms;
+  transition-delay: 0ms;
+  color:#00b7eb;
+}

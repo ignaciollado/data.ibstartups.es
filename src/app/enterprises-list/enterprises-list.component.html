@@ -1,21 +1,46 @@
 <h1>listado de empresas</h1>
 <div *ngIf="enterprises">
-  <div class="row">
+  <div class="row row-cols-3">
   <div *ngFor="let enterprise of enterprises">
     <div class="col">
-    
-      <div class="card">
+      <div class="card mb-4">
+        <img class="img-fluid" *ngIf ="enterprise.logo" src={{enterprise.logo}} alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
         <div class="card-header">
-          <img class="img-fluid" src={{enterprise.projectImg}} alt={{enterprise.projectNameES}} title={{enterprise.projectNameES}} />
+          <a [routerLink]="['/enterprise-detail', enterprise.enterpriseId]"><h3 class="card-title">{{enterprise.socialDenomination}}</h3></a>
+          <p class="card-text">[{{enterprise.constitucionJuridica}}]</p>
+          <p class="card-text">{{enterprise.nameSurname}}</p>
         </div>
         <div class="card-body">
-          <a [routerLink]="['/news-agenda-detail', enterprise.projectLema]">
-            <h4 class="card-title">{{enterprise.projectFase}}</h4>
-          </a>
+          <h4 class="card-title">{{enterprise.activity}}</h4>
+          <p class="card-text">{{enterprise.dateCreation}}</p>
+          <a href='mailto:{{enterprise.contactEmail}}' target="_blank" class="card-link">{{enterprise.contactEmail}}</a>
+          <a href='https://{{enterprise.enterpriseSite}}' target="_blank" class="card-link">{{enterprise.enterpriseSite}}</a>
         </div>
       </div>
-    
     </div>
+
+    <!-- HORIZONTALLY ORIENTED CARD -->
+   <!--  <div class="col">
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img class="img-fluid" *ngIf ="enterprise.logo" src={{enterprise.logo}} alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
+          </div>
+          <div class="col-md-8">
+          <div class="card-body">
+            <a [routerLink]="['/enterprise-detail', enterprise.enterpriseId]"><h3 class="card-title">{{enterprise.socialDenomination}}</h3></a>
+            <p class="card-text">[{{enterprise.constitucionJuridica}}]</p>
+            <p class="card-text">{{enterprise.nameSurname}}</p>
+            <h4 class="card-title">{{enterprise.activity}}</h4>
+            <p class="card-text">{{enterprise.dateCreation}}</p>
+            <a href='mailto:{{enterprise.contactEmail}}' target="_blank" class="card-link">{{enterprise.contactEmail}}</a>
+            <a href='https://{{enterprise.enterpriseSite}}' target="_blank" class="card-link">{{enterprise.enterpriseSite}}</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
   </div>
   </div>
 </div>
