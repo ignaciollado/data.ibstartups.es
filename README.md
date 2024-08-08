@@ -1,6 +1,8 @@
 # data.ibstartups.es
 
-Genera un listado de empresas que se mostrará en un iframe en el portal `https://ibstartups.es`
+Genera un listado de empresas que se mostrará en un iframe en el portal `https://ibstartups.es`.
+
+Las empresas están en un array json.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
 
