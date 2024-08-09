@@ -2,6 +2,7 @@
   {
     "enterpriseId": 1,
     "nameSurname": "Juan Carrasco",
+    "comercialName": "Phoenix 3D",
     "socialDenomination": "Phoenix 3D",
     "contactEmail": "administracion@phoenix3dp.com",
     "enterpriseSite": "www.phoenix3dp.com",
@@ -21,8 +22,9 @@
   },
   {
     "enterpriseId": 2,
-    "nameSurname": "",
-    "socialDenomination": "",
+    "nameSurname": "Eric Charles Alain Drogerys",
+    "comercialName": "Last Minute Boat",
+    "socialDenomination": "Last Minute Dynamics SL",
     "contactEmail": "",
     "enterpriseSite": "",
     "constitucionJuridica": "",

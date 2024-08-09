@@ -1,5 +1,6 @@
 export class EnterpriseDTO {
   enterpriseId: number
+  comercialName: string
   constitucionJuridica: string
   socialDenomination: string
   activity: string
@@ -20,6 +21,7 @@ export class EnterpriseDTO {
 
  constructor(
   enterpriseId: number,
+  comercialName: string,
   constitucionJuridica: string,
   socialDenomination: string,
   activity: string,
@@ -39,6 +41,7 @@ export class EnterpriseDTO {
   projectReason: string
   ) {
     this.enterpriseId = enterpriseId
+    this.comercialName =   comercialName
     this.constitucionJuridica = constitucionJuridica
     this.socialDenomination = socialDenomination
     this.activity = activity
