@@ -1,15 +1,16 @@
+<div class="container">
 <h1>Startups List</h1>
 <div class='input-group has-validation'><i class="bi bi-1-circle-fill"></i>
   <span class="input-group-text" id="searchNamePrepend"><i class="bi bi-search"></i></span>
   <input type='text' #filterArea id="searchName" class="form-control" placeholder="Search for ..." (keyup.enter)="filterList(filterArea.value)" aria-describedby="searchName">
 </div>
 <div *ngIf="enterprises">
-  <div class="row row-cols-3">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-3">
   <div *ngFor="let enterprise of enterprises">
     <div class="col">
       <div class="card mb-4">
-        <img class="img-fluid" *ngIf ="enterprise.logo" src={{enterprise.logo}} alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
-        <img class="img-fluid" *ngIf ="!enterprise.logo" src="https://picsum.photos/200/?greyscale&blur=4" alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
+        <img class="ratio ratio-1x1" *ngIf ="enterprise.logo" src={{enterprise.logo}} alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
+        <img class="ratio ratio-1x1" *ngIf ="!enterprise.logo" src="https://picsum.photos/200/?greyscale&blur=4" alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
         <div class="card-header">
           <a [routerLink]="['/enterprise-detail', enterprise.enterpriseId]" id="socialDenomination"><h3 class="card-title">{{enterprise.socialDenomination}}</h3></a>
           <p class="card-text">[{{enterprise.constitucionJuridica}}]</p>
@@ -19,11 +20,17 @@
           <h4 class="card-title">{{enterprise.activity}}</h4>
           <p class="card-title">{{enterprise.island}}</p>
           <p class="card-text">{{enterprise.dateCreation}}</p>
-          <a href='mailto:{{enterprise.contactEmail}}' target="_blank" class="card-link">{{enterprise.contactEmail}}</a>
+          <a href='mailto:{{enterprise.contactEmail}}' target="_blank" class="card-link">{{enterprise.contactEmail}}</a><br>
           <a href='https://{{enterprise.enterpriseSite}}' target="_blank" class="card-link">{{enterprise.enterpriseSite}}</a>
         </div>
       </div>
     </div>
+
+    <!-- 
+                                  xs<576px sm≥576px md≥768px lg≥992px xl≥1200px xxl≥1400px 
+    Container max-width None (auto) 540px 720px 960px 1140px 1320px
+
+    -->
 
     <!-- HORIZONTALLY ORIENTED CARD -->
    <!--  <div class="col">
@@ -49,6 +56,7 @@
 
   </div>
   </div>
+</div>
 </div>
 
 <div *ngIf="!enterprises">
