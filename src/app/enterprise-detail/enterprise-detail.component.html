@@ -14,15 +14,21 @@
         <h3 class="card-title">{{enterprise.socialDenomination}} {{enterprise.constitucionJuridica}}</h3>
         <h4 class="card-title">{{enterprise.activity}}</h4>
         <p class="card-text">{{enterprise.nameSurname}}</p>
-        <p class="card-text">[{{enterprise.island}}]</p>
+        <p class="card-text">{{enterprise.island}}</p>
         <p class="card-text">Date created: {{enterprise.dateCreation}}</p>
+        <p class="card-text">Number of partners: {{enterprise.partners}}</p>
+        <p class="card-text">Total workers: {{enterprise.totalWorkers}}</p>
+        <p class="card-text">Women: {{enterprise.womenPercent}} %</p>
+
         <a href='mailto:{{enterprise.contactEmail}}' target="_blank" class="link-primary card-link link-offset-3">{{enterprise.contactEmail}}</a>
         <a href='https://{{enterprise.enterpriseSite}}' target="_blank" class="link-primary card-link link-offset-3">{{enterprise.enterpriseSite}}</a>
         <div class="list-group mx-auto p-2">
-        <label for=''><strong>¿En qué etapa se encuentra la startup?</strong></label>
-          <p>{{enterprise.startUpStage}}</p>
-        <label for=''><strong>¿Qué les ha motivado para emprender este proyecto?</strong></label>
-          <p>{{enterprise.projectReason}}</p>
+        <label for=''><strong>Short description:</strong></label>
+          <p>{{enterprise.description}}</p>
+        <label for=''><strong>Needs private funding identification?</strong></label>
+          <p>{{enterprise.needPrivateFundingIdent}}</p>
+        <label for=''><strong>Telephone response to investor needs</strong></label>
+          <p>{{enterprise.phoneResponse}}</p>          
         </div>
       </div>
       </div>
