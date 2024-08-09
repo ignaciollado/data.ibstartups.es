@@ -1,5 +1,33 @@
 [
   {
+    "enterpriseId": 57,
+    "nameSurname": "Joan Company García",
+    "socialDenomination": "Nubita Data Solutions",
+    "contactEmail": "xavier.idevik@nubita.cloud",
+    "enterpriseSite": "www.nubita.cloud",
+    "constitucionJuridica": "SL",
+    "dateCreation": "2023",
+    "activity": "M - Actividades profesionales/ científicas y técnicas",
+    "island": "Mallorca",
+    "logo": "../../assets/logos/Logo_Nubita.png",
+    "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
+    "projectReason": "Pasión por la idea: Nos apasiona esta idea y queremos llevarla a cabo. Creemos que tiene un gran potencial."
+  },
+  {
+    "enterpriseId": 58,
+    "nameSurname": "Aina calafat",
+    "socialDenomination": "Eficiencia y sol sl",
+    "contactEmail": "acalafat@efiwatt.com",
+    "enterpriseSite": "Www.efiwatt.com",
+    "constitucionJuridica": "SL",
+    "dateCreation": "2021",
+    "activity": "F - Construcción",
+    "island": "Mallorca",
+    "logo": "../../assets/logos/efiwatt_logo.svg",
+    "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
+    "projectReason": "Identificación de una necesidad en el mercado: Hemos identificado una oportunidad o problema en el mercado que nuestro proyecto puede resolver."
+  },
+  {
     "enterpriseId": 1,
     "nameSurname": "Adriana Ruiz García",
     "socialDenomination": "Cultaru",
@@ -9,7 +37,7 @@
     "dateCreation": "2023",
     "activity": "R - Actividades artísticas",
     "island": "Mallorca",
-    "logo": "https://picsum.photos/1320.webp",
+    "logo": "",
     "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
     "projectReason": "Oportunidad de negocio: Creemos que esta idea tiene potencial comercial y puede generar ingresos."
   },
@@ -782,33 +810,5 @@
     "logo": "",
     "startUpStage": "",
     "projectReason": ""
-  },
-  {
-    "enterpriseId": 57,
-    "nameSurname": "Joan Company García",
-    "socialDenomination": "Nubita Data Solutions",
-    "contactEmail": "xavier.idevik@nubita.cloud",
-    "enterpriseSite": "www.nubita.cloud",
-    "constitucionJuridica": "SL",
-    "dateCreation": "2023",
-    "activity": "M - Actividades profesionales/ científicas y técnicas",
-    "island": "Mallorca",
-    "logo": "../../assets/logos/Logo_Nubita.png",
-    "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
-    "projectReason": "Pasión por la idea: Nos apasiona esta idea y queremos llevarla a cabo. Creemos que tiene un gran potencial."
-  },
-  {
-    "enterpriseId": 58,
-    "nameSurname": "Aina calafat",
-    "socialDenomination": "Eficiencia y sol sl",
-    "contactEmail": "acalafat@efiwatt.com",
-    "enterpriseSite": "Www.efiwatt.com",
-    "constitucionJuridica": "SL",
-    "dateCreation": "2021",
-    "activity": "F - Construcción",
-    "island": "Mallorca",
-    "logo": "../../assets/logos/efiwatt_logo.svg",
-    "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
-    "projectReason": "Identificación de una necesidad en el mercado: Hemos identificado una oportunidad o problema en el mercado que nuestro proyecto puede resolver."
   }
 ]

@@ -9,6 +9,7 @@
     <div class="col">
       <div class="card mb-4">
         <img class="img-fluid" *ngIf ="enterprise.logo" src={{enterprise.logo}} alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
+        <img class="img-fluid" *ngIf ="!enterprise.logo" src="https://picsum.photos/200/?greyscale&blur=4" alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
         <div class="card-header">
           <a [routerLink]="['/enterprise-detail', enterprise.enterpriseId]" id="socialDenomination"><h3 class="card-title">{{enterprise.socialDenomination}}</h3></a>
           <p class="card-text">[{{enterprise.constitucionJuridica}}]</p>
