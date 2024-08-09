@@ -9,6 +9,8 @@ export class EnterpriseDTO {
   dateCreation: string
   enterpriseSite: string
   island: string
+  startUpStage: string
+  projectReason: string
 
  constructor(
   enterpriseId: number,
@@ -21,6 +23,8 @@ export class EnterpriseDTO {
   dateCreation: string,
   enterpriseSite: string,
   island: string,
+  startUpStage: string,
+  projectReason: string
   ) {
     this.enterpriseId = enterpriseId
     this.constitucionJuridica = constitucionJuridica
@@ -32,5 +36,7 @@ export class EnterpriseDTO {
     this.dateCreation = dateCreation
     this.enterpriseSite = enterpriseSite
     this.island = island
+    this.startUpStage = startUpStage
+    this.projectReason = projectReason
     }
 }

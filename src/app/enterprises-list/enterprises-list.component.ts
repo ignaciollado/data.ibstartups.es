@@ -9,6 +9,8 @@ import { EnterpriseDTO } from '../Models/enterprise.dto';
 })
 export class EnterprisesListComponent implements OnInit {
   currentLang: string = ""
+  values: string = ""
+  isListMode: boolean = false
   public enterprises: EnterpriseDTO[] = []
 
 constructor(private enterpriseService: EnterpriseService) {}
@@ -27,7 +29,6 @@ ngOnInit(): void {
     default:
       this.currentLang = 'ca-ES'
  }
- console.log (this.currentLang)
  this.getEnterprises()
 }
 
@@ -35,7 +36,31 @@ getEnterprises() {
   this.enterpriseService.getAll()
     .subscribe( (enterprises: any) => {
       this.enterprises = enterprises
-      console.log (enterprises)
     })
 }
+
+filterList(e: string) {
+  let cards = document.getElementsByClassName("col")
+
+  Array.from(cards).forEach((card) => {
+      card.classList.remove("ocultar")
+      card.classList.remove("matchCard")
+  })
+
+  if(e.toUpperCase()) {
+    Array.from(cards).forEach((card) => {
+      if (!card.textContent.toUpperCase().includes(e.toUpperCase())) {
+        card.classList.add("ocultar")
+        console.log ("+NO+")
+      } else {
+        card.classList.add("matchCard")
+        console.log ("*SI*")
+      }
+   })
+  }
+  
+  console.log(e.toUpperCase())
+
+}
+
 }

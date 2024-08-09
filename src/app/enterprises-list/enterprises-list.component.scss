@@ -1,3 +1,7 @@
+.col {
+  margin-top: 1rem;
+}
+
 a {
   text-decoration: none;
 
@@ -10,3 +14,12 @@ a:hover {
   transition-delay: 0ms;
   color:#00b7eb;
 }
+
+.ocultar {
+  display: none;
+}
+
+.matchCard {
+  border: 2px solid green;
+}
+

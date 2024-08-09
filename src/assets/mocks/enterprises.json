@@ -9,7 +9,9 @@
     "dateCreation": "2023",
     "activity": "R - Actividades artísticas",
     "island": "Mallorca",
-    "logo": "https://picsum.photos/200/300.webp"
+    "logo": "https://picsum.photos/1320.webp",
+    "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
+    "projectReason": "Oportunidad de negocio: Creemos que esta idea tiene potencial comercial y puede generar ingresos."
   },
   {
     "enterpriseId": 2,
@@ -21,7 +23,9 @@
     "dateCreation": "2021",
     "activity": "C - Industria manufacturera",
     "island": "Mallorca",
-    "logo": "https://picsum.photos/200/300.webp"
+    "logo": "https://picsum.photos/1320.webp",
+    "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
+    "projectReason": "Pasión por la idea: Nos apasiona esta idea y queremos llevarla a cabo. Creemos que tiene un gran potencial."
   },
   {
     "enterpriseId": 3,
@@ -33,7 +37,9 @@
     "dateCreation": "01/09/2022",
     "activity": "S - Otros servicios",
     "island": "Mallorca",
-    "logo": "https://picsum.photos/200/300.webp"
+    "logo": "https://picsum.photos/1320.webp",
+    "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
+    "projectReason": "Oportunidad de negocio: Creemos que esta idea tiene potencial comercial y puede generar ingresos."
   },
   {
     "enterpriseId": 4,
@@ -45,7 +51,9 @@
     "dateCreation": "2023",
     "activity": "H - Transporte y almacenamiento",
     "island": "Mallorca",
-    "logo": "https://picsum.photos/200/300.webp"
+    "logo": "https://picsum.photos/1320.webp",
+    "startUpStage": "Prototipo: Hemos desarrollado un prototipo o una versión inicial. Estamos probando la viabilidad técnica y funcional.",
+    "projectReason": "Oportunidad de negocio: Creemos que esta idea tiene potencial comercial y puede generar ingresos."
   },
   {
     "enterpriseId": 5,
@@ -57,7 +65,9 @@
     "dateCreation": "2020",
     "activity": "I - Hostelería",
     "island": "Mallorca",
-    "logo": "https://picsum.photos/200/300.webp"
+    "logo": "https://picsum.photos/1320.webp",
+    "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
+    "projectReason": "Identificación de una necesidad en el mercado: Hemos identificado una oportunidad o problema en el mercado que nuestro proyecto puede resolver."
   },
   {
     "enterpriseId": 6,
@@ -69,7 +79,9 @@
     "dateCreation": "2022",
     "activity": "R - Actividades artísticas",
     "island": "Mallorca",
-    "logo": "https://picsum.photos/200/300.webp"
+    "logo": "https://picsum.photos/1320.webp",
+    "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
+    "projectReason": "Pasión por la idea: Nos apasiona esta idea y queremos llevarla a cabo. Creemos que tiene un gran potencial."
   },
   {
     "enterpriseId": 7,
@@ -81,6 +93,8 @@
     "dateCreation": "2020",
     "activity": "C - Industria manufacturera",
     "island": "Mallorca",
-    "logo": "https://picsum.photos/200/300.webp"
+    "logo": "https://picsum.photos/1320.webp",
+    "startUpStage": "Producto/Servicio en funcionamiento: Tenemos un producto o servicio que ya está disponible para los usuarios.",
+    "projectReason": "Identificación de una necesidad en el mercado: Hemos identificado una oportunidad o problema en el mercado que nuestro proyecto puede resolver."
   }
 ]
