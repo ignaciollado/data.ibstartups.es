@@ -1,6 +1,6 @@
 <div class="container">
 <h1>Startups List</h1>
-<div class='input-group has-validation'><i class="bi bi-1-circle-fill"></i>
+<div class='input-group has-validation'>
   <span class="input-group-text" id="searchNamePrepend"><i class="bi bi-search"></i></span>
   <input type='text' #filterArea id="searchName" class="form-control" placeholder="Search for ..." (keyup.enter)="filterList(filterArea.value)" aria-describedby="searchName">
 </div>
@@ -9,11 +9,10 @@
   <div *ngFor="let enterprise of enterprises">
     <div class="col">
       <div class="card mb-4">
-        <img class="ratio ratio-1x1" *ngIf ="enterprise.logo" src={{enterprise.logo}} alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
-        <img class="ratio ratio-1x1" *ngIf ="!enterprise.logo" src="https://picsum.photos/200/?greyscale&blur=4" alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
+        <img class="object-fit-scale" *ngIf ="enterprise.logo" src={{enterprise.logo}} alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
+        <img class="img-thumbnail" *ngIf ="!enterprise.logo" src="https://picsum.photos/200/?greyscale&blur=4" alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
         <div class="card-header">
           <a [routerLink]="['/enterprise-detail', enterprise.enterpriseId]" id="socialDenomination"><h3 class="card-title">{{enterprise.socialDenomination}}</h3></a>
-          <p class="card-text">[{{enterprise.constitucionJuridica}}]</p>
           <p class="card-text">{{enterprise.nameSurname}}</p>
         </div>
         <div class="card-body">

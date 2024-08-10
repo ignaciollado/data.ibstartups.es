@@ -4,7 +4,6 @@
 
 a {
   text-decoration: none;
-
   color: #42b6e9;
 }
 
@@ -23,6 +22,22 @@ a:hover {
   border: 2px solid green;
 }
 
+input {
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  background-color: #42b6e9;
+  color: #fff;
+}
+
 img {
   min-height: 29rem;
   max-height: 29rem;
@@ -31,6 +46,5 @@ img {
 .card-body{
   min-height: 13rem;
   max-height: 13rem;
-
 }
 
