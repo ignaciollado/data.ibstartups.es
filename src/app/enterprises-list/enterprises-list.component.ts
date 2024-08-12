@@ -39,28 +39,26 @@ getEnterprises() {
     })
 }
 
-filterList(e: string) {
+filterList(e: any) {
   let cards = document.getElementsByClassName("col")
 
   Array.from(cards).forEach((card) => {
-      card.classList.remove("ocultar")
-      card.classList.remove("matchCard")
+    card.classList.remove("ocultar")
+    card.classList.remove("matchCard")
   })
 
-  if(e.toUpperCase()) {
+ if(e.target.value.toUpperCase()) {
     Array.from(cards).forEach((card) => {
-      if (!card.textContent.toUpperCase().includes(e.toUpperCase())) {
+      if (!card.textContent.toUpperCase().includes(e.target.value.toUpperCase())) {
         card.classList.add("ocultar")
-        console.log ("+NO+")
-      } else {
-        card.classList.add("matchCard")
-        console.log ("*SI*")
-      }
+      } 
    })
   }
-  
-  console.log(e.toUpperCase())
 
+}
+
+clearInput(){
+  document.getElementById("searchName").innerText = ""
 }
 
 }

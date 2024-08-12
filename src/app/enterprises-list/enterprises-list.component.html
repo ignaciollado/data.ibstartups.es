@@ -1,9 +1,9 @@
 <div class="container">
 <h1>Startups List</h1>
-<div class='input-group has-validation'>
-  <span class="input-group-text" id="searchNamePrepend"><i class="bi bi-search"></i></span>
-  <input type='text' #filterArea id="searchName" class="form-control" placeholder="Search for ..." (keyup.enter)="filterList(filterArea.value)" aria-describedby="searchName">
+<div class='mb-3'>
+  <input type='text' #filterArea id="searchName" class="form-control" placeholder="Search for ..." (keyup.enter)="filterList($event)" (focus)="clearInput()" aria-describedby="searchName">
 </div>
+
 <div *ngIf="enterprises">
   <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-3">
   <div *ngFor="let enterprise of enterprises">
@@ -11,16 +11,17 @@
       <div class="card mb-4">
         <img class="object-fit-scale" *ngIf ="enterprise.logo" src={{enterprise.logo}} alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
         <img class="img-thumbnail" *ngIf ="!enterprise.logo" src="https://picsum.photos/200/?greyscale&blur=4" alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
-        <div class="card-header">
-          <a [routerLink]="['/enterprise-detail', enterprise.enterpriseId]" id="socialDenomination"><h3 class="card-title">{{enterprise.socialDenomination}}</h3></a>
-          <p class="card-text">{{enterprise.nameSurname}}</p>
-        </div>
         <div class="card-body">
+          <h1 class="card-title">{{enterprise.socialDenomination}}</h1>
+          <p class="card-text">{{enterprise.nameSurname}}</p>
           <h4 class="card-title">{{enterprise.activity}}</h4>
           <p class="card-title">{{enterprise.island}}</p>
           <p class="card-text">{{enterprise.dateCreation}}</p>
           <a href='mailto:{{enterprise.contactEmail}}' target="_blank" class="card-link">{{enterprise.contactEmail}}</a><br>
           <a href='https://{{enterprise.enterpriseSite}}' target="_blank" class="card-link">{{enterprise.enterpriseSite}}</a>
+        </div>
+        <div class='card-footer'>
+          <a [routerLink]="['/enterprise-detail', enterprise.enterpriseId]" id="socialDenomination" target="_blank"><h3 class="card-title">+info</h3></a>
         </div>
       </div>
     </div>

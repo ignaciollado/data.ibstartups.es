@@ -49,14 +49,15 @@ img {
   border: 1px solid #2c586b;
 }
 
-.card-header {
-  min-height: 6rem;
-  max-height: 6rem;
+/* .card-header {
+  min-height: 8rem;
+  max-height: 8rem;
   background-color: transparent;
-}
+} */
 
-.card-body{
-  min-height: 13rem;
-  max-height: 13rem;
+.card-body {
+  min-height: 20rem;
+  max-height: 20rem;
+  background-color: transparent;
 }
 

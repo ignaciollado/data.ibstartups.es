@@ -32,6 +32,8 @@ export class EnterpriseDetailComponent {
           this.currentLang = 'ca-ES'
      }
      this.getEnterpriseDetail()
+     scrollTo({ top: 0, behavior: 'smooth' })
+     document.body.scrollTop
     }
 
     getEnterpriseDetail() {
@@ -40,6 +42,12 @@ export class EnterpriseDetailComponent {
           this.enterprises = enterprises
           this.enterprisesFiltered = this.enterprises.filter(item => item.enterpriseId === +this.id )
           console.log (this.enterprisesFiltered)
+          scrollTo({ top: 0, behavior: 'smooth' })
+          document.body.scrollTop
         })
+    }
+
+    windowClose() {
+      window.close()
     }
 }
