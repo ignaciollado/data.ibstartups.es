@@ -11,22 +11,24 @@
       </div>
       <div class="col-md-8">
       <div class="card-body">
-        <h3 class="card-title">{{enterprise.socialDenomination}}</h3>
+        <h1 class="card-title">{{enterprise.socialDenomination}}</h1>
+        <h3 class="card-text">{{enterprise.nameSurname}}</h3>
+        <h4 class="card-title">Trade name: {{enterprise.comercialName}}</h4>
         <h4 class="card-title">Activity: {{enterprise.activity}}</h4>
-        <h5>Legal form: {{enterprise.constitucionJuridica}}</h5>
-        <p class="card-text">{{enterprise.nameSurname}}</p>
-        <p class="card-text">{{enterprise.island}}</p>
-        <p class="card-text">Date created: {{enterprise.dateCreation}}</p>
-        <p class="card-text">Number of partners: {{enterprise.partners}}</p>
-        <p class="card-text">Total workers: {{enterprise.totalWorkers}}</p>
-        <p class="card-text">Women: {{enterprise.womenPercent}} %</p>
+        <h5 class="card-title">Legal form: {{enterprise.constitucionJuridica}}</h5>
 
-        <a href='mailto:{{enterprise.contactEmail}}' target="_blank" class="link-primary card-link link-offset-3">{{enterprise.contactEmail}}</a>
+        <h5 class="card-text">{{enterprise.island}}</h5>
+        <h5 class="card-text">Date created: {{enterprise.dateCreation}}</h5>
+        <h5 class="card-text">Number of partners: {{enterprise.partners}}</h5>
+        <h5 class="card-text">Total workers: {{enterprise.totalWorkers}}</h5>
+        <h5 class="card-text">Women: {{enterprise.womenPercent}}%</h5>
+
+        <a href='mailto:{{enterprise.contactEmail}}' target="_blank" class="link-primary card-link link-offset-3">{{enterprise.contactEmail}}</a><br>
         <a href='https://{{enterprise.enterpriseSite}}' target="_blank" class="link-primary card-link link-offset-3">{{enterprise.enterpriseSite}}</a>
         <div class="list-group mx-auto p-2">
         <label for=''><strong>Short description</strong></label>
-          <p class="text-start">{{enterprise.description}}</p>
-        <label for=''><strong>Needs private funding identification?</strong></label>
+          <p class="text-start" [innerHTML]="enterprise.description"></p>
+        <label for=''><strong>Do they need to identify sources of private finance (loans, investment capital, etc.) and learn how to negotiate financial agreements??</strong></label>
           <p>{{enterprise.needPrivateFundingIdent}}</p>
         <label for=''><strong>Telephone response to investor needs</strong></label>
           <p>{{enterprise.phoneResponse}}</p>          
