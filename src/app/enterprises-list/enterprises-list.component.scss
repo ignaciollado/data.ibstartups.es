@@ -41,6 +41,10 @@ img {
   max-height: 29rem;
 }
 
+.card{
+  padding: .5rem;
+}
+
 .card:hover {
   border: 1px solid #2c586b;
 }
@@ -48,6 +52,7 @@ img {
 .card-header {
   min-height: 6rem;
   max-height: 6rem;
+  background-color: transparent;
 }
 
 .card-body{
