@@ -1,5 +1,6 @@
 .col {
   margin-top: 1rem;
+  color: #0f0f0f;
 }
 
 a {
@@ -12,6 +13,12 @@ a:hover {
   transition: opacity 100ms;
   transition-delay: 0ms;
   color:#00b7eb;
+}
+
+h3 {
+  font-family: 'Roboto Condensed';
+  color: #2d5a6d;
+  font-size: 2em;
 }
 
 .ocultar {
