@@ -1,5 +1,5 @@
 <div class="container">
-<h1>Startups List</h1>
+<!-- <h1>Startups List</h1> -->
 <div class='mb-3'>
   <input type='text' #filterArea id="searchName" class="form-control" placeholder="Search for ..." (keyup.enter)="filterList($event)" (focus)="clearInput()" aria-describedby="searchName">
 </div>
@@ -12,10 +12,10 @@
         <img class="object-fit-scale" *ngIf ="enterprise.logo" src={{enterprise.logo}} alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
         <img class="img-thumbnail" *ngIf ="!enterprise.logo" src="https://picsum.photos/200/?greyscale&blur=4" alt={{enterprise.socialDenomination}} title={{enterprise.socialDenomination}} />
         <div class="card-body">
-          <h1 class="card-title">{{enterprise.socialDenomination}}</h1>
+          <h2 class="card-title">{{enterprise.socialDenomination}}</h2>
           <p class="card-text">{{enterprise.nameSurname}}</p>
-          <h4 class="card-title">{{enterprise.activity}}</h4>
-          <p class="card-title">{{enterprise.island}}</p>
+          <h5 class="card-title">{{enterprise.activity}}</h5>
+          <p class="card-title " [ngClass]=" { mallorca: enterprise.island === 'Mallorca', menorca: enterprise.island === 'Menorca', ibiza: enterprise.island === 'Ibiza'}">{{enterprise.island}}</p>
           <p class="card-text">{{enterprise.dateCreation}}</p>
           <a href='mailto:{{enterprise.contactEmail}}' target="_blank" class="card-link">{{enterprise.contactEmail}}</a><br>
           <a href='https://{{enterprise.enterpriseSite}}' target="_blank" class="card-link">{{enterprise.enterpriseSite}}</a>

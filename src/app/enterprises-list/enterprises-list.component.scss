@@ -37,8 +37,8 @@ input:focus {
 }
 
 img {
-  min-height: 29rem;
-  max-height: 29rem;
+  min-height: 26rem;
+  max-height: 26rem;
 }
 
 .card{
@@ -49,15 +49,33 @@ img {
   border: 1px solid #2c586b;
 }
 
-/* .card-header {
-  min-height: 8rem;
-  max-height: 8rem;
-  background-color: transparent;
-} */
-
 .card-body {
   min-height: 20rem;
   max-height: 20rem;
   background-color: transparent;
+}
+
+.mallorca {
+  background-color: #000;
+  color: #fff;
+  padding: .5rem;
+}
+
+.menorca {
+  background-color: blue;
+  color: #fff;
+  padding: .5rem;
+}
+
+.ibiza {
+  background-color: red;
+  color: #fff;
+  padding: .5rem;
+}
+
+.formentera {
+  background-color: green;
+  color: #fff;
+  padding: .5rem;
 }
 
